@@ -1,4 +1,4 @@
-const baseUrl = 'http://localhost:1200/api/v1';
+const baseUrl = 'https://dreamcardealershop.onrender.com/api/v1';
 const userInfo = JSON.parse(localStorage.getItem('current-user'));
 const vehicleInfo = JSON.parse(localStorage.getItem('vehicle'));
 const alertBox = document.getElementById('notification');
