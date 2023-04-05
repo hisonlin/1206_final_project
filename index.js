@@ -9,11 +9,13 @@ const userRoutes = require('./routes/user');
 const authorizedAdminRoutes = require('./routes/authorized_admin');
 const vehicleRoutes = require('./routes/vehicle');
 const orderRoutes = require('./routes/order');
+const cors = require('cors');
 
 app.use(morgan('dev'));
 
 // is used for parsing json
 app.use(express.json());
+app.use(cors());
 
 // Send UI from the server
 app.use(express.static('public'));
