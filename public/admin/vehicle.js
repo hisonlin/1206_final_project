@@ -1,6 +1,7 @@
 const baseUrl = 'https://dreamcardealershop.onrender.com/api/v1';
 const admin = document.getElementById('admin');
 const alertBox = document.getElementById('notification');
+const vehicleTable = document.getElementById('vehicleTable');
 
 function getadminInfo() {
     const adminInfo = JSON.parse(localStorage.getItem('current-admin'));
@@ -65,6 +66,7 @@ function addVehicle(event) {
                 img.value = "";
                 type.value = "";
                 description.value = "";
+                vehicleTable.innerHTML = ''; // clear table
                 showVehicles(baseUrl, 'vehicleTable');
 
                 // Remove alert after 2 seconds
@@ -213,6 +215,7 @@ function deleteVehicle(baseUrl, vehicleTable, vehicles, tr, i) {
                 vehicles.splice(i, 1);
                 // remove vehicle row from table
                 tr.parentNode.removeChild(tr);
+                vehicleTable.innerHTML = ''; // clear table
                 showVehicles(baseUrl, 'vehicleTable');
             })
             .catch(error => console.error('Error deleting vehicle:', error));
