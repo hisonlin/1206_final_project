@@ -3,6 +3,17 @@ const userInfo = JSON.parse(localStorage.getItem('current-user'));
 const vehicleInfo = JSON.parse(localStorage.getItem('vehicle'));
 const alertBox = document.getElementById('notification');
 
+function needLogin() {
+    const userInfo = JSON.parse(localStorage.getItem('current-user'));
+
+    if (!userInfo) {
+        alert("You need to login to access this page!");
+        window.location.href = "/user/user_login.html";
+    }
+    
+}
+needLogin();
+
 function createOrder(event) {
     event.preventDefault();
 
@@ -55,7 +66,7 @@ function createOrder(event) {
             .catch(error => console.error(error));
           
             setTimeout(() => {
-              window.location.href = '/user/purchase_after_login.html';
+              window.location.href = '/user/order_confirm.html';
             }, 2000);
           }
           else {
