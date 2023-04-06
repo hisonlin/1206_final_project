@@ -4,6 +4,11 @@ const alertBox = document.getElementById('notification');
 
 function getUserInfo() {
     const userInfo = JSON.parse(localStorage.getItem('current-user'));
+    
+    if(!userInfo) {
+        alert("You need to login to access this page!");
+        window.location.href = "/user/user_login.html";
+    }
     user.innerHTML = `Welcome, ${userInfo.name}`;
 }
 getUserInfo();
