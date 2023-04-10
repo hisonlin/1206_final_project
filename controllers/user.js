@@ -120,9 +120,11 @@ const getUserById = async (request, response) => {
 const updateUser = async (request, response) => {
     const id = request.params.id;
     const incomingData = request.body;
+    const encryptPassword = await bcrypt.hash(incomingData.password, 10);
 
     try {
-        const userData = await UserModel.findByIdAndUpdate(id, incomingData, { returnOriginal: false });
+        incomingData.password = encryptPassword;
+        const userData = await UserModel.findByIdAndUpdate(id, incomingData, { new: true });
         return response.status(200).json({
             message: `Succesfully Updated the User ${userData.name}`,
             data: userData
