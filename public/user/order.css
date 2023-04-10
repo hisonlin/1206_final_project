@@ -1,0 +1,87 @@
+body {
+  background-color: #222;
+  color: #fff;
+  
+}
+
+nav {
+  height: 70px;
+  padding: 20px;
+  font-size: 24px;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid #fff;
+}
+
+th {
+  background-color: #333;
+}
+
+td img {
+  max-width: 200px;
+  max-height: 100px;
+  display: block;
+  margin: auto;
+}
+
+tr:nth-child(even) {
+  background-color: #333;
+}
+
+#vehicleTable {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+#vehicleTable tr {
+  width: 50%;
+}
+
+#signout, #submit, #search, button {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #222;
+}
+
+#signout, #submit, #search, button:hover {
+  background-color: #ffca3a;
+  border-color: #ffca3a;
+  color: #222;
+}
+
+input, textarea {
+  background-color: #333;
+  border-color: #fff;
+  color: #fff;
+}
+
+label, .form-label {
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #222;
+}
+
+.btn-primary:hover {
+  background-color: #ffca3a;
+  border-color: #ffca3a;
+  color: #222;
+}

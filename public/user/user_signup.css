@@ -1,0 +1,99 @@
+/* Navigation Bar */
+.nav {
+  background-color: #121212;
+}
+
+.nav-link {
+  color: #f5f5f5;
+}
+
+.nav-link.active {
+  color: #ffc107;
+}
+
+/* Form */
+.container {
+  margin-top: 50px;
+}
+
+.form-label {
+  font-weight: bold;
+  color: #f5f5f5;
+}
+
+.form-text {
+  color: #c7c7c7;
+}
+
+.btn-primary {
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+.btn-primary:hover {
+  background-color: #ffca3a;
+  border-color: #ffca3a;
+}
+
+/* Alert Box */
+#notification {
+  margin-top: 20px;
+}
+
+.alert-success {
+  background-color: #4caf50;
+  color: #f5f5f5;
+  border-color: #4caf50;
+}
+
+.alert-danger {
+  background-color: #f44336;
+  color: #f5f5f5;
+  border-color: #f44336;
+}
+
+/* Signup Form */
+.signup-container {
+  margin-top: 50px;
+}
+
+.signup-form-label {
+  font-weight: bold;
+  color: #f5f5f5;
+}
+
+.signup-form-text {
+  color: #c7c7c7;
+}
+
+.signup-btn-primary {
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+.signup-btn-primary:hover {
+  background-color: #ffca3a;
+  border-color: #ffca3a;
+}
+
+/* Signup Alert Box */
+#signup-notification {
+  margin-top: 20px;
+}
+
+.signup-alert-success {
+  background-color: #4caf50;
+  color: #f5f5f5;
+  border-color: #4caf50;
+}
+
+.signup-alert-danger {
+  background-color: #f44336;
+  color: #f5f5f5;
+  border-color: #f44336;
+}
+
+body {
+  background-color: #222222;
+  color: #FFFFFF;
+}

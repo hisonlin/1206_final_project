@@ -124,7 +124,7 @@ const updateUser = async (request, response) => {
     try {
         const userData = await UserModel.findByIdAndUpdate(id, incomingData, { returnOriginal: false });
         return response.status(200).json({
-            message: `Succesfully Updated the Admin ${userData.name}`,
+            message: `Succesfully Updated the User ${userData.name}`,
             data: userData
         })
     } catch (error) {

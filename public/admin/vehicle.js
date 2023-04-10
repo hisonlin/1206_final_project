@@ -21,6 +21,10 @@ function signOut() {
     window.location.href = "/admin/admin_login.html";
 }
 
+function myAccount() {
+    window.location.href = "/admin/admin_profile.html";
+}
+
 function addVehicle(event) {
     event.preventDefault(); // Prevent the default form submission behavior
 

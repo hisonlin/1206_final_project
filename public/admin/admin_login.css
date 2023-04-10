@@ -1,0 +1,125 @@
+/* Navigation Bar */
+.nav {
+  background-color: #333333;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link.active {
+  color: #ffc107;
+}
+
+/* Form */
+.container {
+  margin-top: 50px;
+}
+
+.form-label {
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.form-text {
+  color: #BEBEBE;
+}
+
+.btn-primary {
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+.btn-primary:hover {
+  background-color: #fcbf00;
+  border-color: #fcbf00;
+}
+
+/* Alert Box */
+#notification {
+  margin-top: 20px;
+}
+
+.alert-success {
+  background-color: #3c763d;
+  color: #FFFFFF;
+  border-color: #3c763d;
+}
+
+.alert-danger {
+  background-color: #a94442;
+  color: #FFFFFF;
+  border-color: #a94442;
+}
+
+/* Dark mode */
+body {
+  background-color: #222222;
+  color: #FFFFFF;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.form-control {
+  background-color: #333333;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+}
+
+.form-control:focus {
+  background-color: #333333;
+  border: 1px solid #ffc107;
+  color: #FFFFFF;
+  box-shadow: none;
+}
+
+.btn-primary {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #fcbf00;
+  border-color: #fcbf00;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:active, .btn-primary:focus {
+  background-color: #fcbf00;
+  border-color: #fcbf00;
+  box-shadow: none;
+}
+
+.btn-primary:disabled, .btn-primary:disabled:hover, .btn-primary:disabled:focus {
+  background-color: #333333;
+  border-color: #333333;
+}
+
+.btn-outline-primary {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  transition: all 0.2s ease;
+}
+
+.btn-outline-primary:hover {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
+  transition: all 0.2s ease;
+}
+
+.btn-outline-primary:active, .btn-outline-primary:focus {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
+  box-shadow: none;
+}
+
+.btn-outline-primary:disabled, .btn-outline-primary:disabled:hover, .btn-outline-primary:disabled:focus {
+  color: #BEBEBE;
+  background-color: #333333;
+  border-color: #BEBEBE;
+}

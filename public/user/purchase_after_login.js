@@ -20,6 +20,10 @@ function signOut() {
     window.location.href = "/user/purchase.html";
 }
 
+function myAccount() {
+    window.location.href = "/user/user_profile.html";
+}
+
 function showVehicles(baseUrl, tableId) {
     fetch(`${baseUrl}/vehicles`)
         .then(response => response.json())

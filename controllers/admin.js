@@ -132,9 +132,12 @@ const getAdminById = async (request, response) => {
 const updateAdmin = async (request, response) => {
     const id = request.params.id;
     const incomingData = request.body;
+    const encryptPassword = await bcrypt.hash(incomingData.password, 10);
 
     try {
-        const adminData = await AdminModel.findByIdAndUpdate(id, incomingData, { returnOriginal: false });
+        incomingData.password = encryptPassword;
+        const adminData = await AdminModel.findByIdAndUpdate(id, incomingData, { new: true });
+
         return response.status(200).json({
             message: `Succesfully Updated the Admin ${adminData.name}`,
             data: adminData

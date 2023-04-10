@@ -37,4 +37,15 @@ td img {
 #vehicleTable tr {
     width: 50%;
 }
-    
+
+body {
+    background-color: #222;
+    color: #fff;
+  }
+
+  
+#myAccount, #signout{
+    background-color: #ffc107 !important;
+    border-color: #ffc107 !important;
+    color: #222 !important;
+}
