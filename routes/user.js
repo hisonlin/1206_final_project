@@ -19,7 +19,7 @@ router.put('/:id', UserController.updateUser)
 
 
 // GET USER BY ID
-router.get('/', UserController.getUserById)
+router.get('/:id', UserController.getUserById)
 
 
 // GET ALL USERS
