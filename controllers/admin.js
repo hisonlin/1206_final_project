@@ -17,6 +17,11 @@ const registerAdmin = async (request, response) => {
                 message: "Unauthorized!"
             });
         }
+        const adminIdused = await AdminModel.findOne({ admin_id: adminId });
+        if(adminIdused){
+            return response.status(401).json({
+                message: "Admin ID already Used!"
+        });
 
         // Encrypting password so that no one as a developer can read it and misuse it
         const encryptPassword = await bcrypt.hash(newAdmin.password, 10);
